@@ -17,15 +17,21 @@ var config = {
 
 var game = new Phaser.Game(config);
 
+var starfield;
+
 function preload ()
 {
     this.load.image("logo", "assets/logo.png");
     this.load.image("red", "assets/red.png");
+    this.load.image('starfield', 'assets/games/invaders/starfield.png');
 }
 
 function create ()
 {
-    //this.add.image("300", "300", "logo");
+
+    //this.add.image("300", "300", "logo"); 
+    //  The scrolling starfield background
+    starfield = this.add.tileSprite(0, 0, 800, 600, 'starfield');
     const particles = this.add.particles("red");
     var emitter = particles.createEmitter(
         {
