@@ -1,5 +1,5 @@
 {
-  "name": "phaser demo",
+  "name": "phaser-demo",
   "version": "1.0.0",
   "description": "phaser demo",
   "main": "src/index.js",
